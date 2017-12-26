@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["../../rules"],
+  "rules": {
+    "no-cross-dependencies": [true, "tests/no-cross-dependencies/module1", "tests/no-cross-dependencies/module2"]
+  }
+}
