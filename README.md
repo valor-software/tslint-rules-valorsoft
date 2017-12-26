@@ -1,5 +1,7 @@
 # tslint-rules-valorsoft
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/valor-software/tslint-rules-valorsoft.svg)](https://greenkeeper.io/)
+
 ## Install
 
 Install the package using NPM:
