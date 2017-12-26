@@ -1,0 +1,8 @@
+import { Component } from '@angular/core';
+
+import { Location } from '@angular/common';
+
+import { parse } from '../module2';
+                       ~~~~~~~~~~ [0]
+
+[0]: This import create cross dependencies, import an internal instead
