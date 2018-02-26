@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": ["../../rules"],
+  "rules": {
+    "ng-on-changes-interface": true
+  }
+}
