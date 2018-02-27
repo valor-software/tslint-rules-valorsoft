@@ -6,9 +6,10 @@ import { Component, OnChanges } from '@angular/core';
   styleUrls: ['./test.component.scss']
 })
 export class CbFilterCategoryComponent implements OnChanges {
-  ngOnChanges(changes: any): void {
-  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use appropriate type 'SimpleChanges' for ngOnChanges, not any.]
+  ngOnChanges(changes: any) {
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~
   }
+~~~ [Use appropriate type 'SimpleChanges' for ngOnChanges, not any.]
 }
 
 import { Component, OnChanges, SimpleChanges } from '@angular/core';
@@ -19,6 +20,6 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
   styleUrls: ['./test.component.scss']
 })
 export class CbFilterCategoryComponent implements OnChanges {
-  ngOnChanges(changes: SimpleChanges): void {
+  ngOnChanges(changes: SimpleChanges) {
   }
 }

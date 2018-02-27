@@ -1,4 +1,1 @@
-<test1 data="Test"></test1>
-
-<test2 [data]="'Test'"></test2>
-        ~~~~~~~~~~~~~~  [Use Input string without binding.]
+<ng-template data="Test"></ng-template>
