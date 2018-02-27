@@ -12,7 +12,7 @@ export class Rule extends Lint.Rules.AbstractRule {
     typescriptOnly: true
   };
 
-  public static FAILURE_STRING = "Use appropriate type 'SimpleChanges' for ngOnChanges, not any.";
+  public static FAILURE_STRING = 'Use appropriate type \'SimpleChanges\' for ngOnChanges, not any.';
 
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
     return this.applyWithFunction(sourceFile, walk);
@@ -28,7 +28,8 @@ function walk(ctx: Lint.WalkContext<void>) {
       if (methodName === 'ngOnChanges') {
         for (const parameter of method.parameters) {
           if (!parameter.type || parameter.type.kind === ts.SyntaxKind.AnyKeyword) {
-            return ctx.addFailure(method.getStart(), method.getWidth(), Rule.FAILURE_STRING);
+            const start = node.getStart(ctx.sourceFile);
+            return ctx.addFailure(start, node.end, Rule.FAILURE_STRING);
           }
         }
       }

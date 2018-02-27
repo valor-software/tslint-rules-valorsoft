@@ -6,7 +6,7 @@
     "declaration": true,
     "noImplicitAny": false,
     "removeComments": true,
-    "lib": ["es6", "es2015", "dom"],
+    "lib": ["dom", "es7"],
     "noLib": false,
     "outDir": "./rules",
     "typeRoots": [

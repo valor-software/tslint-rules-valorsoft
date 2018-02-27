@@ -1,0 +1,17 @@
+describe('Common. Test. Runtime coverage', () => {
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+});
+~~  [Need to add at least 'xit|it'.]
+
+describe('Common. Test 2. Runtime coverage', () => {
+  it('runtime coverage 2', () => {
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  });
+~~~~  [Need to add at least 'expect'.]
+});
+
+describe('Common. Test 3. Runtime coverage', () => {
+  it('runtime coverage 3', () => {
+     expect(true).toEqual(true);
+  });
+});
